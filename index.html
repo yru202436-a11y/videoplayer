@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#090b10">
+    <title>GRYPHON</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="brand">
+        <span class="logo">G</span>
+        <span>GRYPHON</span>
+    </div>
+    <span class="header-text">VIDEO EXPERIENCE</span>
+</header>
+
+<main class="container">
+
+    <p class="eyebrow">YOUR PERSONAL STREAMING SPACE</p>
+    <h1>Watch Anything.</h1>
+    <p class="description">Your entertainment starts here.</p>
+
+    <section class="input-card">
+        <label for="videoURL">ENTER VIDEO LINK</label>
+
+        <div class="input-group">
+            <input
+                type="url"
+                id="videoURL"
+                placeholder="Paste your video link..."
+                autocomplete="off"
+            >
+
+            <button id="playBtn" type="button">
+                ▶ Play Video
+            </button>
+        </div>
+
+        <p id="message" class="message">
+            Enter your video link to start watching.
+        </p>
+    </section>
+
+    <section class="player-card">
+
+        <div class="video-container" id="videoContainer">
+
+            <div class="placeholder" id="placeholder">
+                <div class="play-icon">▶</div>
+                <h3>GRYPHON</h3>
+                <p>Your entertainment starts here.</p>
+            </div>
+
+            <iframe
+                id="videoPlayer"
+                title="GRYPHON"
+                allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                allowfullscreen
+                referrerpolicy="strict-origin-when-cross-origin">
+            </iframe>
+
+        </div>
+
+        <div class="video-details">
+            <div>
+                <h3>Now Playing</h3>
+                <p>Enjoy your video experience.</p>
+            </div>
+
+            <button id="fullscreenBtn" class="fullscreen-btn">
+                ⛶ Fullscreen
+            </button>
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    © <span id="year"></span> GRYPHON. All rights reserved.
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
